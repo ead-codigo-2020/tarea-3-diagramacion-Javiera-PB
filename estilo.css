@@ -1,1 +1,19 @@
-.entrada{background-color:#7AC143;}
+.titulo-pagina{
+    font-family: sans-serif;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+}
+.sub-pagina{
+    font-family: sans-serif;
+    color: white;
+    font-size: 24px;
+    font-weight: normal;
+}
+.down-head {
+    font-family: sans-serif;
+    color: #000;
+    font-size: 18px;
+    font-weight: lighter;
+}
+    
