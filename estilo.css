@@ -1,0 +1,184 @@
+*{ 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Roboto Condensed", Arial, Helvetica, sans-serif
+}
+/*titulo y mainmenu*/
+.container {
+    max-width: 1160px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+.up-container{
+    position: relative;
+    background-image:url(https://fedefruta.cl/wp-content/uploads/2019/12/puerto2-1536x1023.jpg);
+    background-position: center;
+    background-blend-mode: soft-light;
+   
+}    
+.up-row {
+    position: relative;
+}
+.up-row_title{
+    margin-top: 40px;
+    margin-left: 140px;
+    margin-right: auto;
+    padding-top: 405;
+    text-align: left; 
+    font-size: 70px; color: white;
+    font-weight: bold;  
+}
+.down-title{
+    margin-left: 140px;
+    padding-bottom: 65px;
+    text-align: left;   
+    font-size: 70px; color: white;
+    font-weight: lighter;
+}
+.up-list{
+    display: flex;
+    margin-left: 140px;
+    margin-right: 140px;
+    padding-top:35px ;
+}    
+.list{
+    display: grid;
+    grid-template-rows: 100px auto;
+    flex: 33%;
+    max-width: 33%;
+}
+/*Inicio en azul*/
+.list-title1{
+    grid-row: 1/2;
+    font-size: 14px;color: white;
+    font-weight:lighter;
+    text-align: center;
+}    
+.list-title{
+    grid-row: 1/2;
+    font-size: 14px;color: white;
+    font-weight:lighter;
+    text-align: center;
+}
+/*Destacadas*/
+.fact-row {
+    position: relative;
+}
+.fact_bg{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0;
+}
+.fact-row .container{
+    position: relative;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+.fact-row_title{
+    margin-bottom: 4rem;
+    padding: 3rem;
+    text-align: center;    
+}
+
+.facts{
+    display: flex;
+    flex-wrap: wrap;
+}
+.fact{
+    display: grid;
+    grid-template-columns: 70px auto;
+    grid-template-rows: auto auto;
+    column-gap: 1.5rem;
+    flex: 33%;
+    max-width: 33%;
+}
+.fact_icon{
+    grid-column: 1/2;
+    grid-row:1/-1;
+    height: 70px;
+    background-color: red;
+}
+.fact_number,
+.fact_label{
+    grid-column: 2/3;
+  
+}
+.fact_number{
+    font-size: 3rem;
+}
+/*Sostenibilidad*/
+.sust {
+    position: relative;
+}
+.sust-container{
+    box-sizing: border-box;
+    width:1440px;
+    height: 800px;
+    position:relative;
+    background-color: black;
+    background-image: url();
+    background-position: center;
+    
+}
+.fact_bg{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0;
+}
+.sust .container{
+    position: relative;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+.sust-title{
+    padding-top: 96px;
+    padding-bottom: 36px;
+    text-align: center; 
+    font-size:30px; color: white;   
+}
+.sust-down-title{
+    padding-right: 400px;
+    padding-left: 400px;
+    padding-bottom: 63px;
+    text-align: center;
+    font-size:22px; color: white;
+
+}
+.sust-info{
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 290px;
+}
+.fact-info{
+    display: grid;
+    grid-template-columns: 260px auto;
+    grid-template-rows: auto auto;
+    column-gap: 38px;
+    flex: 33%;
+    max-width: 33%;
+    font-size:18px; color: white;
+    font-weight: lighter;
+}
+.info_icon{
+    display: grid;
+    grid-template-columns: 260px auto;
+    grid-template-rows: auto auto;
+    column-gap: 38px;
+    flex: 33%;
+    height:175px;
+    width: 260px;
+    background-color: red;
+}
+.sust-sitio-boton{
+    font-size:15px; color: white;
+    font-weight: lighter;    
+}
