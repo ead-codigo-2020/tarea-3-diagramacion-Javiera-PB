@@ -49,11 +49,10 @@ body{
 .list{
     display: grid;
     grid-template-rows: 100px auto;
-    grid-template-columns:;
     column-gap: 15px;
     flex: 33%;
     max-width: 33%;
-    border: thin solid #686d76;
+    border: thin solid #57575765;
 }
 /*Inicio en azul*/
 .list-title1{
@@ -101,11 +100,29 @@ body{
     flex: 33%;
     max-width: 33%;
 }
-.fact_icon{
+.fact_icon-1{
     grid-column: 1/2;
     grid-row:1/-1;
     height: 70px;
-    background-color: red;
+    background-image:url(file:///C:/Users/Javi/Desktop/2s/Dis%20Codigo/tarea-3-diagramacion-Javiera-PB/Img/Container.png);
+    background-position: center;
+    background-size: 80px;
+}
+.fact_icon-2{
+    grid-column: 1/2;
+    grid-row:1/-1;
+    height: 70px;
+    background-image:url(file:///C:/Users/Javi/Desktop/2s/Dis%20Codigo/tarea-3-diagramacion-Javiera-PB/Img/Barco.png);
+    background-position: center;
+    background-size: 75px;
+}
+.fact_icon-3{
+    grid-column: 1/2;
+    grid-row:1/-1;
+    height: 70px;
+    background-image:url(file:///C:/Users/Javi/Desktop/2s/Dis%20Codigo/tarea-3-diagramacion-Javiera-PB/Img/Hoja.png);
+    background-position: center;
+    background-size: 70px;
 }
 .fact_number,
 .fact_label{
@@ -127,7 +144,6 @@ body{
     background-image: url(https://www.xtrafondos.com/wallpapers/cielo-al-atardecer-reflejado-en-el-mar-4615.jpg), linear-gradient(#616060 0%, #000000 100%);
     background-blend-mode: soft-light;
     background-position: center;
-    
 }
 .fact_bg{
     position: absolute;
@@ -182,20 +198,232 @@ body{
     flex: 33%;
     height:175px;
     width: 260px;
-    background-color: red;
 }
 .sust-press{
-    display: grid;
-    grid-template-columns:260px auto ;
-    grid-template-rows: 50px auto;
-    column-gap: 40px ;
-    margin-left:440px ;
-    margin-right: 440px;
+    display: flex;
+    margin-left:470px ;
     margin-top: 18px;
     font-size:12px; color: white;
     font-weight: lighter;   
-    text-align: center;  
 }
 .sust-sitio{
+    box-sizing: border-box;
+    margin-right: 40px;
+    padding: 10px;
+    align-content: center;
+    border: thin solid #57575765;
+    overflow: hidden
+}
+/* Destacado y prensa*/
+.container-2 {
+    max-width: 1440px;
+    max-height: 990px;
+    padding-right:140px;
+    padding-left: 140px;
+    background-color: #e4e6e8;
+} 
+.destacadas {
+    position: relative;
+}
+.destacadas .container-2{
+    position: relative;
+}
+.destacamos{
+    display: flex;
+    flex-wrap: wrap;
+}
+.dest{
+    display: grid;
+    grid-template-columns: 560px 600px;
+    grid-template-rows: 400px auto;
+    flex: 33%;
+    max-width: 33%;
+}
+.dest_title{
+    padding-top: 83px;
+    padding-bottom: 24px;
+    text-align: left;
+    font-size: 30px;color: #44484c;
+    font-weight: lighter;
+}
+.img-dest{
+    grid-column: 1/2;
+    grid-row:1/-1;
+    height: 400px;
+    background-color: red;
+    background-position: center;
+}
+
+.fecha-dest{
+    grid-column: 2/3;
+    padding-top: 96px;
+    padding-bottom: 93px;
+    padding-left: 40px;
+    background-color: white;
+    font-size: 12px;color: #44484c;
+}
+.title-info-dest{
+    padding-bottom: 15px;
+    font-size: 24px; color: #44484c;
+}
+.fact-dest{
+    font-size: 14px;color: #44484c;
+    font-weight: lighter;
+}
+.link-mas{
+    padding-top: 15px;
+    font-size: 12px; color:#1abae9 ;
+    font-weight: bolder;
+}
+/*prensa*/
+.prens-title{
+    padding-top: 50px;
+    padding-bottom: 13px;
+    font-size: 24px; color: #44484c;
+    font-weight: lighter;
+    text-align: left;    
+}
+.prens{
+    display: flex;
+    flex-wrap: wrap;
+}
+.press-news{
+    display: grid;
+    grid-template-columns: 180px 380px;
+    grid-template-rows: 120px 120px;
+    row-gap: 17px ;
+    flex: 33%;
+    max-width: 50%;
+    padding-bottom: 99px;
+}
+.img-pres1{
+    grid-column: 1/2;
+    height: 120px;
+    width: 180px;
+    background-color: red;
+    background-position: center;
+    background-size: 80px;
+}
+.img-pres2{
+    grid-column: 1/2;
+    grid-row: 2/3;
+    height: 120px;
+    width: 180px;
+    background-color: red;
+    background-position: center;
+    background-size: 80px;
+}
+.fecha-pres{
+    grid-column: 2/3;
+    grid-row: 1/2;
+    padding-top: 20px;
+    padding-left: 20px;
+    background-color: white;
+    font-size: 12px; color: #44484c;
+    font-weight: lighter;
+}
+.fecha-pres2{
+    grid-column: 2/3;
+    grid-row: 2/3;
+    padding-left: 20px;
+    padding-top: 20px;
+    background-color: white;
+    font-size: 12px;
+    ont-size: 12px; color: #44484c;
+    font-weight: lighter;
+}
+.fact-pres{
+    grid-column: 2/3;
+    grid-row: 1/2;
+    padding-top: 44px;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: left;
+    font-size: 12px;color: #44484c;
+    font-weight: lighter;
+}
+.fact-pres2{
+    grid-column: 2/3;
+    grid-row: 2/3;
+    padding-top: 44px;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: left;
+    font-size: 12px;color: #44484c;
+    font-weight: lighter;
+}
+.prens-A{
+    display: flex;
+    padding-top: 50px;
+}
+.A-sitio{
+    padding-bottom: 13px;
+    font-size: 26px; color: #44484c;
+    font-weight: lighter;
+    text-align: left;    
+}
+.b-sitio{
+    padding-left: 330px;
+    font-size: 12px; color:#1abae9 ; 
+    font-weight: bolder;
+}
+/*rrss*/
+.press-title{
+    padding-left:40px ;
+    font-size: 26px; color: #44484c;
+    font-weight: lighter;
+}
+.rrss{
+    display: grid;
+    grid-template-columns:280px 280px ;
+    grid-template-rows: 210px ;
+}
+.img-rs{
+    grid-column: 1/2;
+    grid-row: 1/2;
+    background-color: red;
+}
+.title-twt{
+    grid-row: 1/2;
+    grid-column: 2/3;
+    padding: 20px;
+    background-color: white;
+    font-size: 16px; color: #1abae9;
+    font-weight: bold;
+}
+.rs-twt{
+    grid-row: 1/2;
+    grid-column: 2/3;
+    padding-top:48px ;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size:13px ;color:#13181d ;
+    font-weight: lighter;
+}
+.follow{
+    padding-top: 26px ;
+}
+.follow-title{
+    padding-top: 26px ;
+    padding-left:120px ;
+    font-size:16px ; color: #44484c;
+    font-weight: lighter;
+}
+.twitter{
+    font-size: 14px; color: #1abae9;
+    font-weight: bold;
+}
+.facebook{
+    font-size: 14px; color: #1abae9;
+    font-weight: bold;
+}
+.twt-icon{
+    width:20px;
+    height: 17px;
+    background-color: red;
+}
+.fc-icon{
+    width:9px;
+    height: 17px;
     background-color: red;
 }
