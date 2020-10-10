@@ -554,19 +554,19 @@ body{
 .container-4{
     max-width: 1440px;
     padding-top: 60px;
-    padding-right:140px;
     padding-left: 140px;
     padding-bottom:140px;
     background-color: black;
 } 
 .footer{
-    display: grid;
+    display: flex;
+    flex: 1040px;
     padding-top: 50px;
 }
 .footer-grid{ 
     display: grid;
-    grid-template-columns: 200px ;
-    grid-template-rows:104px 22px 44px 44px;
+    grid-template-columns: 200px 150px 560px;
+    grid-template-rows:104px 22px 44px 44px 96px;
     min-height: 100px;
     column-gap: none;
     row-gap: none;
@@ -588,12 +588,30 @@ body{
     font-size: 12px;color: white;
     font-weight: lighter;
 }
-.menu-footer{
+
+.main-footer{
+    grid-row: 1/3;
+    grid-column: 3/4;
     display: grid;
     grid-template-columns: 257px 257px;
-    grid-template-columns:16px 16px 16px 16px 16px ;
-    row-gap:17px ;
     column-gap: 47px;
     font-size: 12px;color: white;
     font-weight: lighter;
+}
+.last-footer{
+    grid-row: 4/6;
+    grid-column: 3/4;
+    display: grid;
+    grid-template-columns: 157px 157px 157px;
+    column-gap: 43px ;
+    font-size: 12px;color: white;
+    font-weight: lighter;
+}
+.conc-last{
+    padding-top: 60px;
+    padding-right: 140px;
+    padding-left: 20px;
+    font-size: 14px; color: #44484c;
+    font-weight: lighter;
+    background-color: #e4e6e8;
 }
