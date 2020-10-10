@@ -550,3 +550,50 @@ body{
     font-weight: bold;
     text-align: left;
 }
+/*footer*/
+.container-4{
+    max-width: 1440px;
+    padding-top: 60px;
+    padding-right:140px;
+    padding-left: 140px;
+    padding-bottom:140px;
+    background-color: black;
+} 
+.footer{
+    display: grid;
+    padding-top: 50px;
+}
+.footer-grid{ 
+    display: grid;
+    grid-template-columns: 200px ;
+    grid-template-rows:104px 22px 44px 44px;
+    min-height: 100px;
+    column-gap: none;
+    row-gap: none;
+    display: center;
+}
+.f-logo{
+   grid-row: 1/2;
+   grid-column: 1/2; 
+}
+.f1{
+    grid-row: 3/4;
+    grid-column: 1/2;
+    font-size:12px ; color: white;
+    font-weight: lighter;
+}
+.f2{
+    grid-row: 4/5;
+    grid-column: 1/2;
+    font-size: 12px;color: white;
+    font-weight: lighter;
+}
+.menu-footer{
+    display: grid;
+    grid-template-columns: 257px 257px;
+    grid-template-columns:16px 16px 16px 16px 16px ;
+    row-gap:17px ;
+    column-gap: 47px;
+    font-size: 12px;color: white;
+    font-weight: lighter;
+}
